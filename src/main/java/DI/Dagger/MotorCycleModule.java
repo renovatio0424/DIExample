@@ -8,8 +8,8 @@ import dagger.Provides;
 public class MotorCycleModule {
 
     @Provides
-    Motor provideMotor(){
-        return new Motor();
+    MotorImpl provideMotor(){
+        return new MotorImpl();
     }
 
     @Provides
@@ -28,8 +28,8 @@ public class MotorCycleModule {
     }
 
     @Provides
-    MotorCycle provideMotorCycle(Motor motor, Wheel wheel, MotorCycleFrame frame){
-        return new MotorCycle(motor, wheel, frame);
+    MotorCycleImpl provideMotorCycle(MotorImpl motor, Wheel wheel, MotorCycleFrame frame){
+        return new MotorCycleImpl(motor, wheel, frame);
     }
 
     @Provides

@@ -1,6 +1,6 @@
 package DI.MotorCycleDI;
 
-public class Motor implements MotorImpl {
+public class MotorImpl implements Motor {
     boolean isRunning = false;
 
     @Override

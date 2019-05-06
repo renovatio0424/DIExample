@@ -1,17 +1,17 @@
 package NoDi;
 
-import NoDI.MotorCycle.MotorCycle;
+import NoDI.MotorCycle.MotorCycleImpl;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class NoDIExampleTest extends TestManager{
-    private MotorCycle motorCycle;
+    private MotorCycleImpl motorCycle;
 
     @Before
     public void setUp() {
-        motorCycle = new MotorCycle();
+        motorCycle = new MotorCycleImpl();
         init();
     }
 

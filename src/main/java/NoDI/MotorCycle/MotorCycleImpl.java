@@ -1,12 +1,12 @@
 package NoDI.MotorCycle;
 
-public class MotorCycle implements MotorCycleImpl {
-    Motor motor;
+public class MotorCycleImpl implements MotorCycle {
+    MotorImpl motor;
     Wheel wheel;
     MotorCycleFrame frame;
 
-    public MotorCycle() {
-        this.motor = new Motor();
+    public MotorCycleImpl() {
+        this.motor = new MotorImpl();
         this.wheel = new Wheel();
         this.frame = new MotorCycleFrame();
     }
@@ -18,11 +18,11 @@ public class MotorCycle implements MotorCycleImpl {
     }
 }
 
-interface MotorCycleImpl {
+interface MotorCycle {
     void run();
 }
 
-interface MotorImpl {
+interface Motor {
     void ready();
 
     void run();

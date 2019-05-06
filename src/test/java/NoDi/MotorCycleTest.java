@@ -1,6 +1,6 @@
 package NoDi;
 
-import NoDI.MotorCycle.MotorCycle;
+import NoDI.MotorCycle.MotorCycleImpl;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -13,7 +13,7 @@ import java.io.PrintStream;
 
 @RunWith(BlockJUnit4ClassRunner.class)
 public class MotorCycleTest {
-    private MotorCycle motorCycle;
+    private MotorCycleImpl motorCycle;
 
     private ByteArrayOutputStream outputStream;
 
@@ -21,7 +21,7 @@ public class MotorCycleTest {
     public void setUp() {
         outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
-        motorCycle = new MotorCycle();
+        motorCycle = new MotorCycleImpl();
     }
 
     @After

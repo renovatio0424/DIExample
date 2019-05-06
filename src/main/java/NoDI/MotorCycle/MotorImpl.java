@@ -1,6 +1,6 @@
 package NoDI.MotorCycle;
 
-public class Motor implements MotorImpl {
+public class MotorImpl implements Motor {
     private boolean isRunning = false;
 
     @Override

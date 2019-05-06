@@ -1,12 +1,12 @@
 package DI.Dagger;
 
-import DI.MotorCycleDI.MotorCycle;
+import DI.MotorCycleDI.MotorCycleImpl;
 
 import javax.inject.Inject;
 
 class Application {
     @Inject
-    MotorCycle motorCycle;
+    MotorCycleImpl motorCycle;
 
     void run() {
         MotorCycleComponent component = DaggerMotorCycleComponent.builder()

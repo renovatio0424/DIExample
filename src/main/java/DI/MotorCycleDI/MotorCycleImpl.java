@@ -1,11 +1,11 @@
 package DI.MotorCycleDI;
 
-public class MotorCycle implements MotorCycleImpl {
-    Motor motor;
+public class MotorCycleImpl implements MotorCycle {
+    MotorImpl motor;
     Wheel wheel;
     MotorCycleFrame frame;
 
-    public MotorCycle(Motor motor,Wheel wheel, MotorCycleFrame motorCycleFrame) {
+    public MotorCycleImpl(MotorImpl motor, Wheel wheel, MotorCycleFrame motorCycleFrame) {
         this.motor = motor;
         this.wheel = wheel;
         this.frame = motorCycleFrame;
@@ -18,11 +18,11 @@ public class MotorCycle implements MotorCycleImpl {
     }
 }
 
-interface MotorCycleImpl {
+interface MotorCycle {
     void run();
 }
 
-interface MotorImpl {
+interface Motor {
     void ready();
 
     void run();

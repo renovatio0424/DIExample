@@ -1,7 +1,6 @@
 package NoDi;
 
-import NoDI.MotorCycle.Motor;
-import NoDi.TestManager;
+import NoDI.MotorCycle.MotorImpl;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,12 +9,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MotorTest extends TestManager {
-    private Motor motor;
+    private MotorImpl motor;
 
 
     @Before
     public void setUp() {
-        motor = new Motor();
+        motor = new MotorImpl();
         init();
     }
 
